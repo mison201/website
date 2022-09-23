@@ -1,0 +1,532 @@
+.cl-internship {
+  background-color: $cl_light_color_2;
+  padding-bottom: 200px;
+  .cl-internship-heading {
+    position: relative;
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: 0.01em;
+    color: #1f3549;
+    margin-bottom: 90px;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 7px;
+      border-radius: 4px;
+      background: #1f3549;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -17px;
+    }
+  }
+  .cl-internship-banner {
+    background-color: rgba(0, 133, 255, 0.05);
+    min-height: 100vh;
+    position: relative;
+    background-image: url(../images/internship/internship-banner-4.svg);
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transition: $cl_transition;
+      background-position: bottom center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform-origin: top right;
+    }
+    &::before {
+      background-image: url(../images/internship/internship-banner-3.svg);
+      height: calc(100% - 50px) !important;
+    }
+    &::after {
+      background-image: url(../images/internship/internship-banner-2.svg);
+      height: calc(100% - 50px) !important;
+    }
+
+    .cl-internship-banner-inner {
+      background-image: url(../images/internship/internship-banner-1.svg);
+      background-position: bottom 80px center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding: 225px 0;
+      position: relative;
+      z-index: 2;
+      .cl-internship-banner-heading {
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 62px;
+        text-align: center;
+        color: $cl_light_color;
+        margin-bottom: 24px;
+      }
+      .cl-internship-banner-content {
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        color: $cl_light_color;
+        margin-bottom: 66px;
+      }
+      .cl-internship-banner-action {
+        text-align: center;
+        a {
+          padding: 22px 142px 23px 142px;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 26px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          color: $cl_light_color;
+          background-color: $cl_secondary_color;
+          box-shadow: 0px 6px 30px -2px rgba(29, 22, 62, 0.2);
+          border-radius: 4px;
+          display: inline-flex;
+          transition: all ease-in-out 0.3s;
+          &:hover {
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  .cl-internship-cjp {
+    background-color: rgba(0, 133, 255, 0.05);
+    .cl-internship-heading {
+      margin-bottom: 51px;
+    }
+    .cl-internship-description {
+      margin-bottom: 70px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: center;
+      color: #9fa6a9;
+    }
+    .cl-internship-cjp-item {
+      margin-bottom: 90px;
+      .cl-internship-cjp-item-icon {
+        margin-bottom: 16px;
+      }
+      .cl-internship-cjp-item-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1f3549;
+        margin-bottom: 16px;
+      }
+      .cl-internship-cjp-item-description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: -0.01em;
+        color: #656c73;
+        width: 256px;
+        max-width: 100%;
+      }
+    }
+  }
+  .cl-wrap-section {
+    position: relative;
+    z-index: 3;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: calc(100% + 200px);
+      background-position: bottom left;
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      background-image: url(../images/internship/rp-bg.svg);
+    }
+  }
+  .cl-internship-wiif {
+    position: relative;
+    z-index: 4;
+    padding-top: 139px;
+    .cl-internship-heading {
+      margin-bottom: 141px;
+    }
+    .cl-internship-wiif-item {
+      padding: 64px 32px;
+      background: $cl_light_color;
+      box-shadow: -2px 10px 30px rgba(3, 15, 26, 0.25);
+      border-radius: 8px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      color: #1f3549;
+      margin-bottom: 36px;
+    }
+  }
+  .cl-internship-rp {
+    padding-top: 134px;
+    padding-bottom: 259px;
+    position: relative;
+    .cl-internship-heading {
+      margin-bottom: 89px;
+    }
+    .cl-internship-roadmap {
+      .vertical {
+        width: 5px;
+        top: 0;
+        left: 50%;
+        height: 100%;
+        background: linear-gradient(
+          238.76deg,
+          #4b84f9 -5.57%,
+          #0c44b4 55.2%,
+          #011240 102.34%
+        );
+        position: absolute;
+        z-index: 1;
+      }
+      .cl-internship-roadmap-info {
+        position: relative;
+        margin: 60px auto;
+        width: 700px;
+        padding: 3px 20px 3px 20px;
+
+        .cl-internship-roadmap-item {
+          padding: 10px;
+          font-size: 16px;
+          line-height: 1.7;
+          position: relative;
+          width: 475px;
+          max-width: 100%;
+          &:nth-child(even) {
+            left: 55%;
+            text-align: start;
+          }
+
+          &:nth-child(odd) {
+            right: 173px;
+            text-align: end;
+          }
+
+          &:nth-child(even)::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 9px;
+            display: block;
+            border-radius: 50%;
+            background: linear-gradient(
+              238.76deg,
+              #4b84f9 -5.57%,
+              #0c44b4 55.2%,
+              #011240 102.34%
+            );
+            top: 12%;
+            left: -39px;
+            z-index: 2;
+          }
+
+          &:nth-child(odd)::before {
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 9px;
+            display: block;
+            border-radius: 50%;
+            background: linear-gradient(
+              238.76deg,
+              #4b84f9 -5.57%,
+              #0c44b4 55.2%,
+              #011240 102.34%
+            );
+            top: 12%;
+            right: -39px;
+            z-index: 2;
+          }
+
+          .time {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 33px;
+            letter-spacing: 0.01em;
+            background: linear-gradient(
+              238.76deg,
+              #4b84f9 -5.57%,
+              #0c44b4 55.2%,
+              #011240 102.34%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 16px;
+          }
+          .round {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.01em;
+            color: #656c73;
+          }
+          .description {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.01em;
+            color: #656c73;
+          }
+        }
+      }
+    }
+  }
+  .cl-internship-faq {
+    margin-bottom: 313px;
+    .cl-internship-heading {
+      margin-bottom: 100px;
+    }
+    .cl-internship-faq-content {
+      padding: 72px 56px;
+      background: $cl_light_color_2;
+      box-shadow: 0px 2px 30px -7px rgba(0, 0, 0, 0.25);
+      border-radius: 30px;
+      .accordion-item {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #9fa6a9;
+        .accordion-header {
+          .accordion-button {
+            padding: 10px 0;
+            background-color: transparent;
+            outline: 0;
+            box-shadow: none;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.5;
+            color: $cl_text_color;
+            &::after{
+              width: 12px;
+              height: 12px;
+              background-size: 12px;
+            }
+            // &:not(.collapsed){
+            //   font-weight: 500;
+            // }
+            .number{
+              margin-right: 60px;
+            }
+          }
+        }
+        .accordion-body {
+          font-size: 16px;
+          font-weight: 400;
+          letter-spacing: -0.01em;
+          line-height: 30px;
+          padding: 0 0 10px 0;
+        }
+      }
+    }
+  }
+  .cl-internship-cta {
+    background-image: url(../images/internship/internship-cta-bg.svg);
+    padding-top: 94px;
+    padding-bottom: 133px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .cl-internship-cta-card {
+      background: $cl_primary_color;
+      box-shadow: 0px 20px 30px rgba(3, 15, 26, 0.2);
+      border-radius: 8px;
+      padding: 64px 50px;
+      text-align: center;
+      .cl-internship-cta-heading {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 33px;
+        letter-spacing: 0.01em;
+        color: $cl_light_color;
+        margin-bottom: 32px;
+      }
+      .cl-internship-cta-body {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: -0.01em;
+        color: $cl_light_color_2;
+        margin-bottom: 32px;
+        // width: 296px;
+        width:100%;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .cl-internship-cta-action {
+        a {
+          display: inline-flex;
+          padding: 16px 72px 16px 32px;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          align-items: center;
+          color: #0085ff;
+          background-color: $cl_light_color;
+          box-shadow: 0px 20px 30px rgba(3, 15, 26, 0.2);
+          border-radius: 4px;
+          transition: $cl_transition;
+          background-image: url(../images/link-right.svg);
+          background-repeat: no-repeat;
+          background-position: right 32px center;
+          &:hover {
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+            background-position: right 24px center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1199px) {
+  .cl-internship {
+    padding-bottom: 0;
+    .cl-internship-banner {
+      min-height: 800px;
+    }
+    .cl-internship-wiif {
+      padding-top: 80px;
+      .cl-internship-wiif-item {
+        padding: 24px 20px;
+      }
+    }
+    .cl-internship-rp {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+    .cl-internship-faq {
+      margin-bottom: 80px;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .cl-internship {
+    .cl-wrap-section:before {
+      height: calc(100% + 60px);
+      background-size: 150%;
+    }
+    .cl-internship-rp {
+      .cl-internship-roadmap {
+        .cl-internship-roadmap-info {
+          .cl-internship-roadmap-item {
+            width: 300px;
+            &:nth-child(odd) {
+              right: -2px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .cl-internship {
+    .cl-internship-heading {
+      font-size: 30px;
+      line-height: 36px;
+      &::before {
+        width: 80px;
+        height: 5px;
+      }
+    }
+    .cl-internship-banner {
+      min-height: 700px;
+      .cl-internship-banner-inner {
+        padding: 130px 0;
+        .cl-internship-banner-heading {
+          font-size: 46px;
+        }
+        .cl-internship-banner-content {
+          font-size: 20px;
+          line-height: 1.5;
+        }
+        .cl-internship-banner-action {
+          a {
+            padding: 12px 60px;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+    .cl-wrap-section:before {
+      background-size: 300%;
+    }
+    .cl-internship-cjp {
+      .cl-internship-cjp-item {
+        margin-bottom: 40px;
+        .cl-internship-cjp-item-description {
+          width: 100%;
+        }
+      }
+    }
+    .cl-internship-wiif {
+      .cl-internship-heading {
+        margin-bottom: 80px;
+      }
+      .cl-internship-wiif-item {
+        padding: 16px;
+        margin-bottom: 24px;
+      }
+    }
+    .cl-internship-rp {
+      .cl-internship-heading {
+        margin-bottom: 60px;
+      }
+      .cl-internship-roadmap {
+        .cl-internship-roadmap-info {
+          width: 100%;
+          .cl-internship-roadmap-item {
+            width: auto;
+            &:nth-child(odd) {
+              text-align: left;
+              right: auto;
+              left: 0;
+              &:before {
+                right: auto;
+                left: -16px;
+              }
+            }
+            &:nth-child(2n) {
+              left: 0;
+              &::before {
+                left: -16px;
+              }
+            }
+          }
+        }
+
+        .vertical {
+          left: 10px;
+        }
+      }
+    }
+    .cl-internship-faq {
+      margin-bottom: 0;
+      .cl-internship-heading {
+        margin-bottom: 60px;
+      }
+      .cl-internship-faq-content {
+        padding: 24px;
+      }
+    }
+    .cl-internship-cta {
+      padding: 50px 0;
+      background-image: none;
+    }
+  }
+}
