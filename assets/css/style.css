@@ -2237,15 +2237,6 @@ main {
   position: relative;
   box-sizing: border-box;
 }
-.cl-wap-program .cl-banner::before {
-  content: "";
-  position: absolute;
-  bottom: -106px;
-  right: calc(50% - 650px);
-  background-color: #D9D9D9;
-  width: 137px;
-  height: 106px;
-}
 .cl-wap-program .cl-banner .frame {
   background: url(../images/wap-program/frame.png) no-repeat center right;
   background-size: 100% 100%;
@@ -2659,8 +2650,7 @@ main {
   background-repeat: no-repeat;
 }
 .cl-about .cl-banner {
-  padding: 220px 0 160px 0;
-  min-height: 100vh;
+  padding: 220px 0 220px 0;
   background: linear-gradient(180deg, #c7deff -18.52%, #edf2f7 33.95%, #f5f8fd 100%, #fff 100%);
   position: relative;
 }
@@ -2700,6 +2690,9 @@ main {
 .cl-about .cl-introduce {
   padding-top: 120px;
   padding-bottom: 60px;
+}
+.cl-about .cl-introduce .row:first-child {
+  margin-bottom: 6rem;
 }
 .cl-about .cl-introduce h3 {
   font-size: 24px;
@@ -2865,9 +2858,6 @@ main {
   }
   .cl-about .cl-introduce {
     padding: 40px 0;
-  }
-  .cl-about .cl-introduce .row:first-child {
-    margin-bottom: 6rem;
   }
   .cl-about .cl-introduce h3 {
     font-size: 20px;
