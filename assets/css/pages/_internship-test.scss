@@ -1,0 +1,355 @@
+.cl-internship-test {
+  background-image: url(../images/internship-test/intership-test-bg.svg);
+  background-size: 100% 100%;
+  background-position: top left;
+  .internship-test-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../images/internship-test/bg-intership-test.png);
+    background-size: cover;
+    .banner-internship {
+      padding: 80px 0;
+      width: 100%;
+      .internship-test-header-title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 56px;
+        color: $cl_white_color;
+        width: 354px;
+        max-width: 100%;
+      }
+
+      .internship-test-header-text {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 26px;
+        color: $cl_white_color;
+        margin-top: 26px;
+        width: 354px;
+        max-width: 100%;
+      }
+
+      .internship-test-action {
+        margin-top: 26px;
+        margin-bottom: 26px;
+        a {
+          font-style: normal;
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 40px;
+          text-decoration-line: underline;
+          color: #ffcf5c;
+        }
+      }
+    }
+  }
+  .github-test {
+    margin-top: 54px;
+    position: relative;
+    .github-test-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 26px;
+      color: #1f3549;
+      position: relative;
+      margin-bottom: 41px;
+
+      &::before {
+        content: "";
+        width: 94px;
+        height: 4px;
+        background-color: #1f3549;
+        position: absolute;
+        top: 44px;
+        border-radius: 4px;
+      }
+    }
+
+    .github-test-content {
+      .github-test-content-title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 56px;
+        color: $cl_primary_color;
+        margin-bottom: 41px;
+      }
+
+      .github-test-content-description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1f3549;
+        margin-bottom: 104px;
+
+        .text-bold {
+          font-weight: 700;
+        }
+      }
+
+      .input-output {
+        margin-bottom: 78px;
+
+        .input-title,
+        .output-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 33px;
+          letter-spacing: 0.01em;
+          color: #1f3549;
+        }
+
+        .input-items {
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 34px;
+          color: #1f3549;
+          max-width: 100%;
+          width: 738px;
+        }
+
+        .output-description {
+          max-width: 100%;
+          width: 634px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 34px;
+          color: #1f3549;
+        }
+      }
+
+      .example {
+        margin-bottom: 170px;
+
+        .example-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 33px;
+          letter-spacing: 0.01em;
+          color: #1f3549;
+          margin-bottom: 75px;
+        }
+
+        .border-left {
+          border-right: 1px solid;
+
+          .sample-input {
+            .item-1,
+            .item-2 {
+              margin-bottom: 73px;
+
+              .item-title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 26px;
+                color: #1f3549;
+                margin-right: 57px;
+              }
+            }
+          }
+        }
+
+        .explaination {
+          padding-left: 60px;
+
+          .explaination-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1f3549;
+          }
+
+          .expalination-description {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 34px;
+            color: #656c73;
+          }
+        }
+      }
+
+      .submission {
+        margin-bottom: 100px;
+
+        .submission-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 33px;
+          letter-spacing: 0.01em;
+          color: #1f3549;
+          margin-right: 154px;
+        }
+
+        .submission-description {
+          max-width: 100%;
+          width: 784px;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 34px;
+          color: #1f3549;
+
+          ul {
+            li {
+              &:not(:last-child) {
+                padding-bottom: 40px;
+              }
+            }
+          }
+
+          .text-blue {
+            color: $cl_primary_color;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .got-questions {
+    background-image: url(../images/internship-test/bg-question.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 105px 45px 96px 45px;
+    .got-questions-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 26px;
+      color: #1f3549;
+      position: relative;
+      margin-bottom: 41px;
+
+      &::before {
+        content: "";
+        width: 94px;
+        height: 4px;
+        background-color: #1f3549;
+        position: absolute;
+        top: 44px;
+        border-radius: 4px;
+      }
+    }
+
+    .got-questions-description {
+      margin-top: 46px;
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 54px;
+      letter-spacing: 0.01em;
+      color: #1f3549;
+    }
+
+    .got-questions-action {
+      margin-top: 46px;
+      .cl-btn-discord-action {
+        background-color: $cl_light_color;
+        border: 1px solid #e2e2e2;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: $cl_primary_color !important;
+        box-shadow: none;
+        &:hover {
+          background-color: $cl_primary_color;
+          color: $cl_white_color !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1199px) {
+  .cl-internship-test {
+    .internship-test-header {
+      min-height: 600px;
+      .banner-internship {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .cl-internship-test {
+    .internship-test-header {
+      min-height: 550px;
+    }
+    .github-test {
+      .github-test-content {
+        .submission {
+          .submission-title {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .cl-internship-test {
+    background-position: 0px 507px;
+    background-size: 100% 839px;
+    background-repeat: no-repeat;
+    .internship-test-header {
+      .banner-internship {
+        .internship-test-header-title {
+          font-size: 29px;
+        }
+        .internship-test-header-text {
+          font-size: 15px;
+        }
+        .internship-test-action {
+          a {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    .github-test {
+      .github-test-content {
+        .github-test-content-title {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+        .github-test-content-description {
+          font-size: 18px;
+        }
+        .input-output {
+          .input-title,
+          .output-title {
+            font-size: 25px;
+          }
+          .output-description {
+            font-size: 15px;
+          }
+          .input-items {
+            font-size: 15px;
+            .input-item {
+              .input-items-childen {
+                .input-item-childen {
+                  font-size: 13px;
+                }
+              }
+            }
+          }
+        }
+        .example {
+          margin-bottom: 70px;
+          .explaination {
+            padding-left: 0;
+          }
+          .border-left {
+            .sample-input {
+              .item-1,
+              .item-2 {
+                display: block !important;
+                .item-title {
+                  margin-bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

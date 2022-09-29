@@ -1,0 +1,25 @@
+.cl-btn {
+    border: 0;
+    padding: 17px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: transparent;
+    color: $cl_white_color !important;
+    display: inline-flex;
+    align-items: center;
+    height: 56px;
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: $cl_transition;
+    &:hover {
+      background-color: $cl_primary_color;
+      color: $cl_white_color;
+    }
+    &.cl-btn-primary {
+      background-color: $cl_primary_color;
+    }
+  }

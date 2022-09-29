@@ -1,0 +1,43 @@
+#contactModal {
+    .modal-header {
+      background: $cl_primary_color;
+      color: $cl_white_color;
+      .modal-title {
+        font-weight: 700;
+      }
+      .btn-close {
+        filter: invert(1);
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+    .modal-body {
+      padding: 24px 24px 15px;
+      .cl-internship-contact-form {
+        textarea {
+          height: 180px;
+        }
+        .wpcf7-not-valid-tip {
+          font-size: 13px;
+        }
+        .btn-primary {
+          background: $cl_primary_color;
+          border-radius: 4px;
+          color: #fafafa;
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 26px;
+          padding: 12px 66px 17px !important;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+          }
+        }
+      }
+    }
+  }
+  
